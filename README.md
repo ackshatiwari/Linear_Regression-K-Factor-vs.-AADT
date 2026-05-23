@@ -30,12 +30,13 @@ The model produced the following values:
 - Mean Squared Error: 85828907.18922682
 - Mean Absolute Error: 6226.485029575414
 
-These results show that K Factor alone explains only a small part of the variation in AADT. The scatter plot still shows a downward trend in the fitted line after outlier removal, but the relationship is not strong enough for highly accurate prediction.
+These results show that K Factor alone explains only a small part of the variation in AADT. The scatter plot still shows a moderately negative correlation in the fitted line after outlier removal, but the relationship is not strong enough for highly accurate prediction.
 
 ![Results plot](Results.png)
 
 ## Conclusion
-The hypothesis was only partially supported. There is some relationship between K Factor and AADT, but it is weak on its own. This means K Factor may help identify general traffic patterns, but it should not be treated as the only factor used to predict AADT.
+
+The results suggest that as traffic volume increases, the K Factor tends to decrease. This is the opposite of the original hypothesis, which expected higher AADT to be associated with a higher K Factor. However, the relationship is weak, so K Factor alone does not fully explain the traffic pattern. Other factors, such as the number of lanes, connections to busier arterial roads, and higher population density, may also influence AADT.
 
 ### Ways to Improve Accuracy
 - Use multiple linear regression instead of only one predictor.
